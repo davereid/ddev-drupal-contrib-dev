@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#ddev-generated
 ## Description: Update local module clones
 ## Usage: module-update
 ## Example: ddev module-update

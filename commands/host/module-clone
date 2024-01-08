@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#ddev-generated
 ## Description: Clone a Drupal.org module locally
 ## Usage: module-clone
 ## Example: ddev module-clone name

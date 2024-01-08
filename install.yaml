@@ -3,11 +3,11 @@
 name: drupal-contrib-dev
 
 project_files:
-- commands/host/module-clone
-- commands/host/module-update
+  - commands/host/module-clone
+  - commands/host/module-update
 
 post_install_actions:
-- mkdir -p "${DDEV_APPROOT}/modules"
-- ddev composer config repositories.modules '{"type": "path", "url": "modules/*", "options": {"symlink": true}}'
+  - mkdir -p "${DDEV_APPROOT}/modules"
+  - ddev composer config repositories.modules '{"type": "path", "url": "modules/*", "options": {"symlink": true}}'
 
 #removal_actions:

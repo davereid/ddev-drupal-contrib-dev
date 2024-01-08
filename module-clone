@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## Description: Clone a Drupal.org module locally
+## Usage: module-clone
+## Example: ddev module-clone name
+
+rm -rf $DDEV_APPROOT/web/modules/local/$1
+git clone git@git.drupal.org:project/$1.git $DDEV_APPROOT/modules/$1
+if [ -f $DDEV_APPROOT/modules/$1/composer.json ]; then
+  ddev composer require "drupal/$1:*"
+else
+  ddev composer remove "drupal/$1"
+  ln -s ../../../modules/$1 $DDEV_APPROOT/web/modules/local/$1
+fi
+
+ddev drush cr

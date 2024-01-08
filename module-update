@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Update local module clones
+## Usage: module-update
+## Example: ddev module-update
+
+for dir in $DDEV_APPROOT/modules/*/ ; do (cd "$dir" && echo "$dir on $(git rev-parse --abbrev-ref HEAD)" && git pull); done
+ddev drush updatedb
+ddev drush cr

@@ -4,6 +4,11 @@
 ## Usage: module-clone
 ## Example: ddev module-clone name
 
+if [ -d "$DDEV_APPROOT/modules/$1" ]; then
+  echo "The $1 module is already cloned."
+  exit
+fi
+
 ddev composer config repositories.modules > /dev/null || ddev composer config repositories.modules '{"type": "path", "url": "modules/*", "options": {"symlink": true}}'
 
 rm -rf $DDEV_APPROOT/web/modules/local/$1

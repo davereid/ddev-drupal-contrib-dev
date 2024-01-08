@@ -9,6 +9,7 @@ setup() {
   cd "${TESTDIR}"
   ddev config --project-name=${PROJNAME}
   ddev start -y >/dev/null
+  ddev composer create drupal/recommended-project --stability dev --no-interaction
 }
 
 health_checks() {

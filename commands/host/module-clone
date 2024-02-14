@@ -6,13 +6,13 @@
 
 if [ -d "$DDEV_APPROOT/modules/$1" ]; then
   echo "The $1 module is already cloned."
-  exit
+else
+  rm -rf $DDEV_APPROOT/web/modules/local/$1
+  git clone git@git.drupal.org:project/$1.git $DDEV_APPROOT/modules/$1
 fi
 
 ddev composer config repositories.modules > /dev/null || ddev composer config repositories.modules '{"type": "path", "url": "modules/*", "options": {"symlink": true}}'
 
-rm -rf $DDEV_APPROOT/web/modules/local/$1
-git clone git@git.drupal.org:project/$1.git $DDEV_APPROOT/modules/$1
 if [ -f $DDEV_APPROOT/modules/$1/composer.json ]; then
   ddev composer require "drupal/$1:*"
 else

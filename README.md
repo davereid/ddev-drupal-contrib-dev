@@ -1,4 +1,4 @@
-[![tests](https://github.comdavereid/ddev-drupal-contrib-dev/actions/workflows/tests.yml/badge.svg)](https://github.com/davereid/ddev-drupal-contrib-dev/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2024.svg)
+[![tests](https://github.com/davereid/ddev-drupal-contrib-dev/actions/workflows/tests.yml/badge.svg)](https://github.com/davereid/ddev-drupal-contrib-dev/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2024.svg)
 
 # ddev-drupal-contrib-dev <!-- omit in toc -->
 

@@ -1,21 +1,17 @@
-[![tests](https://github.com/ddev/ddev-addon-template/actions/workflows/tests.yml/badge.svg)](https://github.com/ddev/ddev-addon-template/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2024.svg)
+[![tests](https://github.comdavereid/ddev-drupal-contrib-dev/actions/workflows/tests.yml/badge.svg)](https://github.com/davereid/ddev-drupal-contrib-dev/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2024.svg)
 
-# ddev-addon-template <!-- omit in toc -->
+# ddev-drupal-contrib-dev <!-- omit in toc -->
 
-* [What is ddev-addon-template?](#what-is-ddev-addon-template)
+* [What is ddev-drupal-contrib-dev?](#what-is-ddev-drupal-contrib-dev)
 * [Components of the repository](#components-of-the-repository)
 * [Getting started](#getting-started)
 * [How to debug in Github Actions](#how-to-debug-tests-github-actions)
 
-## What is ddev-addon-template?
+## What is ddev-drupal-contrib-dev?
 
-This repository is a template for providing [DDEV](https://ddev.readthedocs.io) add-ons and services.
+This repository is a [DDEV](https://ddev.readthedocs.io) add-on to help working with contributed modules easier.
 
-In DDEV addons can be installed from the command line using the `ddev get` command, for example, `ddev get ddev/ddev-redis` or `ddev get ddev/ddev-solr`.
-
-This repository is a quick way to get started. You can create a new repo from this one by clicking the template button in the top right corner of the page.
-
-![template button](images/template-button.png)
+Install this add-on by running `ddev get davereid/ddev-drupal-contrib-dev`
 
 ## Components of the repository
 

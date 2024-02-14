@@ -11,8 +11,6 @@ else
   git clone git@git.drupal.org:project/$1.git $DDEV_APPROOT/modules/$1
 fi
 
-ddev composer config repositories.modules > /dev/null || ddev composer config repositories.modules '{"type": "path", "url": "modules/*", "options": {"symlink": true}}'
-
 if [ -f $DDEV_APPROOT/modules/$1/composer.json ]; then
   ddev composer require "drupal/$1:*"
 else

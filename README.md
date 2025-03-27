@@ -9,7 +9,7 @@
 
 ## What is ddev-drupal-contrib-dev?
 
-This repository is a [DDEV](https://ddev.readthedocs.io) add-on to help working with contributed modules easier.
+This repository is a [DDEV](https://ddev.readthedocs.io) add-on to help working with multiple contributed modules easier.
 
 For DDEV v1.23.5 or above run
 
